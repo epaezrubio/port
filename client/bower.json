@@ -1,0 +1,9 @@
+{
+  "name": "client",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "canvasengine": "*"
+  },
+  "devDependencies": {}
+}
