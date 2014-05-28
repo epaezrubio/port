@@ -10,6 +10,9 @@ var TMXToCanvas;
 
         var init = (function () {
 
+            callback = callback || function () {
+            }
+
             jx.load(TMX, function (data) {
                 TMXObject = data;
                 render(callback);
@@ -30,11 +33,11 @@ var TMXToCanvas;
                 return;
 
             tilesetObject.getWidth = function () {
-                return tilesetObject.width / TMXObject.tilewidth;
+                return TMXObject.height;
             }
 
             tilesetObject.getHeight = function () {
-                return tilesetObject.height / TMXObject.tilewidth;
+                return TMXObject.height;
             }
 
             var getPosition = function (id) {
@@ -67,7 +70,6 @@ var TMXToCanvas;
             }
 
             var drawTileByIdInId = function (imageId, tileId) {
-
                 var imagePosition = getPosition(imageId),
                     tilePosition = getPosition(tileId);
 
@@ -93,15 +95,15 @@ var TMXToCanvas;
                     TMXObject.tilewidth
                     );
             }
-            
+
             callback({
                 drawTileByPositionInId: drawTileByPositionInId,
                 drawTileByIdInPosition: drawTileByIdInPosition,
                 drawTileByIdInId: drawTileByIdInId,
                 drawTile: drawTileByIdInPosition
             });
-            
-            
+
+
         };
     };
 }());
