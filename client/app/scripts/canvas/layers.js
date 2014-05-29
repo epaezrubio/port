@@ -8,25 +8,30 @@ var layeredCanvas = function (context, canvas) {
 
     var getNextHighestDepth = function () {
         return MAX_ZINDEX + zIndexSerial;
+    }, getHighestLayer = function () {
+        return getLayer(layers.length);
+    }, getLowestLayer = function () {
+        return getLayer(0) || null;
+    }, getLayer = function (n) {
+        return layers[n];
     }, sortLayers = function () {
         layers.sort(function (a, b) {
-            return a.zIndex - b.zIndex;
+            return a.zIndex() - b.zIndex();
         });
     }, createLayer = function (zIndex) {
 
         zIndexSerial = zIndexSerial + 1;
 
-        var newLayer = (function (zIndex) {
+        var newLayer = (function (zIndexArgument) {
             var queuedFunctions = [],
-                zIndex = zIndex || getNextHighestDepth();
-
-
-
+                zIndex = zIndexArgument || getNextHighestDepth();
+                
             return {
-                zIndex: function (zIndex) {
-                    if (!zIndex)
+                zIndex: function (zIndexArgument) {
+                    if (!zIndexArgument)
                         return zIndex;
-                    zIndex = zIndex;
+                    
+                    zIndex = zIndexArgument;
                     sortLayers();
                 },
                 queueDraw: function (drawFunction) {
@@ -39,9 +44,10 @@ var layeredCanvas = function (context, canvas) {
                 }
             };
         }(zIndex));
-        
+
         layers.push(newLayer);
         sortLayers();
+        
 
         return newLayer;
 
@@ -50,6 +56,7 @@ var layeredCanvas = function (context, canvas) {
         context.clearRect(0, 0, canvas.width || 640, canvas.height || 480);
 
         for (var i = 0, ii = layers.length; i < ii; i++) {
+        console.log(layers[i].zIndex());
             layers[i].render(context);
         }
 
@@ -57,6 +64,9 @@ var layeredCanvas = function (context, canvas) {
 
     return {
         createLayer: createLayer,
+        getHighestLayer: getHighestLayer,
+        getLowestLayer: getLowestLayer,
+        getLayer: getLayer,
         render: render
     };
 

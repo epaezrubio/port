@@ -7,9 +7,16 @@
 
     var layerSet = layeredCanvas(context, canvas);
     
-    var l1 = layerSet.createLayer();
-    var l2 = layerSet.createLayer();
+    var l = layerSet.createLayer(4);
+    var l2 = layerSet.createLayer(3);
+    var l1 = layerSet.createLayer(1);
     
+    
+    l.queueDraw(function (context) {
+        context.beginPath();
+        context.fillStyle = "#AAFFEE";
+        context.fillRect(15, 50, 50, 50);
+    })
     
     l2.queueDraw(function (context) {
         context.beginPath();
