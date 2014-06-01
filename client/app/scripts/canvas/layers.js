@@ -56,9 +56,10 @@ var layeredCanvas = function (context, canvas) {
         context.clearRect(0, 0, canvas.width || 640, canvas.height || 480);
 
         for (var i = 0, ii = layers.length; i < ii; i++) {
-        console.log(layers[i].zIndex());
             layers[i].render(context);
         }
+        
+        layers = [];
 
     };
 
