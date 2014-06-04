@@ -29,7 +29,6 @@
 
     var draw = function () {
 
-        ctx.clearRect(0, 0, 500, 500);
 
         
 
@@ -47,13 +46,15 @@
                         s: 100
                     }
                 }
-                drawHex(ctx, {x: i, y: j}, 50, undefined, function (ctx) {
-                    var hslString = "hsl(" +
-                        (saturations["x" + i + "y" + j] ? saturations["x" + i + "y" + j].h : "0") +
-                        ", " +
-                        (saturations["x" + i + "y" + j] ? saturations["x" + i + "y" + j].s : "0") +
-                        "%, 50%)"
-                    ctx.fillStyle = hslString;
+                
+                drawHex(ctx, {x: i, y: j}, 100, {x: -92, y: -98}, function (ctx) {
+                    ctx.strokeStyle = "rgb(100, 100, 100)"
+                    ctx.lineWidth = "10"
+                });
+                drawHex(ctx, {x: i, y: j}, 100, undefined, function (ctx) {
+                    ctx.strokeStyle = "rgb(200, 200, 200)"
+                    ctx.lineWidth = "10"
+                    ctx.fillStyle = "red";
                 });
             }
         }

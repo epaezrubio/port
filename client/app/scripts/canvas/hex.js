@@ -53,7 +53,6 @@ var drawHex;
         }
         ctx.lineTo(points[0].x + (offset.x || -radius), points[0].y + (offset.y || -radius));
         ctx.stroke();
-        ctx.fill();
 
     }
 }())
