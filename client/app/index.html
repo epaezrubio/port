@@ -1,96 +1,304 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>client</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <link rel="shortcut icon" href="/favicon.ico">
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
-        <link rel="stylesheet" href="bower_components/skeleton/stylesheets/skeleton.css">
-        <!-- endbower -->
-        <!-- endbuild -->
-        <!-- build:css({.tmp,app}) styles/main.css -->
-        <link rel="stylesheet" href="styles/reset.css">
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,400italic' rel='stylesheet' type='text/css'>
+<head>
+    <meta charset="utf-8">
+    <title>client</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/skeleton/stylesheets/skeleton.css">
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery.ui.core.css">
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery.ui.tooltip.css">
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,400italic' rel='stylesheet'
+          type='text/css'>
 
-    </head>
-    <body>
-        <div class="container">
-            <div class="four columns">
-                <div class="sidebar">
-                    <ul class="menu">
-                        <li>
-                            <a class="menu-item" href="#home">Home</a>
-                        </li>
-                        <li>
-                            <a class="menu-item" href="#competences">Competences</a>
-                        </li>
-                        <li>
-                            <a class="menu-item" href="#about">About</a>
-                        </li>
-                        <li>
-                            <a class="menu-item" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="twelve columns offset-by-four content">
-                <h1 id="home">Home</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
-                </p>
-                <p>
-                    Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. In convallis tellus a mauris. Curabitur non elit ut libero tristique sodales. Mauris a lacus. Donec mattis semper leo. In hac habitasse platea dictumst. Vivamus facilisis diam at odio. Mauris dictum, nisi eget consequat elementum, lacus ligula molestie metus, non feugiat orci magna ac sem. Donec turpis. Donec vitae metus. Morbi tristique neque eu mauris. Quisque gravida ipsum non sapien. Proin turpis lacus, scelerisque vitae, elementum at, lobortis ac, quam. Aliquam dictum eleifend risus. In hac habitasse platea dictumst. Etiam sit amet diam. Suspendisse odio. Suspendisse nunc. In semper bibendum libero.
-                </p>
-                <h1 id="competences">Competences</h1>
-                <p>
-                    Proin nonummy, lacus eget pulvinar lacinia, pede felis dignissim leo, vitae tristique magna lacus sit amet eros. Nullam ornare. Praesent odio ligula, dapibus sed, tincidunt eget, dictum ac, nibh. Nam quis lacus. Nunc eleifend molestie velit. Morbi lobortis quam eu velit. Donec euismod vestibulum massa. Donec non lectus. Aliquam commodo lacus sit amet nulla. Cras dignissim elit et augue. Nullam non diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Aenean vestibulum. Sed lobortis elit quis lectus. Nunc sed lacus at augue bibendum dapibus.
-                </p>
-                <div style="text-align: center">
-                    <div class="cool-circle" style="background-image: url('images/github.jpg')">
+</head>
+<body>
+<div class="container">
+<div class="four columns">
+    <div class="sidebar">
+        <ul class="menu">
+            <li>
+                <a class="menu-item" href="#home">Home</a>
+            </li>
+            <li>
+                <a class="menu-item" href="#competences">Competences</a>
+            </li>
+            <li>
+                <a class="menu-item" href="#skills">Skills</a>
+            </li>
+            <li>
+                <a class="menu-item" href="#works">Works</a>
+            </li>
+            <li>
+                <a class="menu-item" href="#about">About</a>
+            </li>
+            <li>
+                <a class="menu-item" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="twelve columns offset-by-four content">
+<h1 id="home">Home</h1>
 
-                    </div>
-                    <div class="cool-circle" style="background-image: url('images/css.jpg')">
+<p>
+    Hola, soy <b>Eduardo Páez </b>, un <b>programador software y web</b> especialista en <b>JavaScript</b>
+    trabajando
+    actualmente en Ion2s. Vengo del sur de España donde tuve la oportudad de estudiar <b>Desarrollo de
+    Aplicaciones
+    Web</b>. Para saber más de mí mira mi trabajo en mi <a href="">porfolio</a>, <a href="">blog</a> o <a
+        href="">repositorios</a>.
+    Si quieres, sientete libre de <a href="">contactar conmigo</a> por redes sociales o correo electrónico.
+</p>
 
-                    </div>
-                    <div class="cool-circle" style="background-image: url('images/facebook.png')">
+<h1 id="competences">Competences</h1>
 
-                    </div>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
-                </p>
-                <h1 id="about">About</h1>
-                <p>
-                    Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. In convallis tellus a mauris. Curabitur non elit ut libero tristique sodales. Mauris a lacus. Donec mattis semper leo. In hac habitasse platea dictumst. Vivamus facilisis diam at odio. Mauris dictum, nisi eget consequat elementum, lacus ligula molestie metus, non feugiat orci magna ac sem. Donec turpis. Donec vitae metus. Morbi tristique neque eu mauris. Quisque gravida ipsum non sapien. Proin turpis lacus, scelerisque vitae, elementum at, lobortis ac, quam. Aliquam dictum eleifend risus. In hac habitasse platea dictumst. Etiam sit amet diam. Suspendisse odio. Suspendisse nunc. In semper bibendum libero.
-                </p>
-                <p>
-                    Proin nonummy, lacus eget pulvinar lacinia, pede felis dignissim leo, vitae tristique magna lacus sit amet eros. Nullam ornare. Praesent odio ligula, dapibus sed, tincidunt eget, dictum ac, nibh. Nam quis lacus. Nunc eleifend molestie velit. Morbi lobortis quam eu velit. Donec euismod vestibulum massa. Donec non lectus. Aliquam commodo lacus sit amet nulla. Cras dignissim elit et augue. Nullam non diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Aenean vestibulum. Sed lobortis elit quis lectus. Nunc sed lacus at augue bibendum dapibus.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <h1 id="contact">Contact</h1>
-                <p>
-                    Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
-                </p>
-            </div>
+<div>
+    <div class="three columns alpha">
+        <div style="width: 124px; height: 170px; background: red; margin: 20px auto;"></div>
+    </div>
+    <div class="nine columns omega">
+        <p>
+            Me gusta escribir buen código: limpio, escalable, basado en patrones de diseño. Soy amante del
+            código
+            elegante y disfruto cuando programar se convierte en un desafío. No me detiene ninguna falta de
+            conocimiento
+            si existe un libro que hable sobre ese tema. A diferencia de muchos otros programadores, no me da
+            miedo leer
+            una publicación de especificación de un estándar, RFC, o lo que sea necesario para profundizar en un
+            tema
+            concreto.
+        </p>
+    </div>
+</div>
+<p style="clear: left;">
+    Como mis herramientas de trabajo no pueden faltar un buen IDE, debugger, un editor de texto rápido y
+    flexible, y
+    sobre
+    todo
+    una consola de comandos. Por supuesto el café y la pared llena de pizarras para dibujar se dan por hecho.
+</p>
+
+<p>
+    Soy un gran defensor del Open Source, y utilizo recursos desarrollados por la comunidad de desarrolladores
+    siempre
+    que puedo (salvo alguna manía imposible de eliminar hoy en día). Además me apoyo en frameworks siempre que
+    los
+    requerimientos se ajusten a sus funcionalidades. Me encaaaaaaanta desarrollar mediante TDD, no hay mejor
+    sensación
+    en el mundo que ver como todos los tests devuelven OK.
+</p>
+
+<p>
+    Y por último, mencionar que disfruto trabajando en equipos profesionales, así como con ténicas de
+    organización como Scrum.
+</p>
+
+<h1 id="skills">Skills</h1>
+
+
+<div class="skillgroup">
+    <div class="skillgroupname">
+        <h4>Web</h4>
+    </div>
+    <div class="skill html5-skill">
+        <div class="skillname">
+            HTML5:
         </div>
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+        <div class="skillpercent" title="Canvas, WebGL, WebSockets, Phonegap">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="110"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="skill javascript-skill">
+        <div class="skillname">
+            JavaScript:
+        </div>
+        <div class="skillpercent" title="SPA, AngularJS, jQuery, Ember.js">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="150"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="skill css3-skill">
+        <div class="skillname">
+            CSS3:
+        </div>
+        <div class="skillpercent"
+             title="Compass, SASS, Bootstrap, jQuery UI / Mobile, animationes CSS3, diseño responsivo...">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="120"></rect>
+            </svg>
+        </div>
+    </div>
+</div>
 
-        <!-- build:js({.tmp,app}) scripts/vendors.js -->
-        <!-- endbuild -->
-    </body>
+<div class="skillgroup">
+    <div class="skillgroupname">
+        <h4>Bases de datos</h4>
+    </div>
+    <div class="skill mongodb-skill">
+        <div class="skillname">
+            MongoDB:
+        </div>
+        <div class="skillpercent" title="Replicación, sharding, índices eficientes, Mongoose...">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="140"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="skill mysql-skill">
+        <div class="skillname">
+            SQL:
+        </div>
+        <div class="skillpercent" title="MySQL, PostgreSQL, SQL Server, SQLite...">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="130"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="skill neo4j-skill">
+        <div class="skillname">
+            Neo4j:
+        </div>
+        <div class="skillpercent">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="100"></rect>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<div class="skillgroup left">
+    <div class="skillgroupname">
+        <h4>Servidor</h4>
+    </div>
+    <div class="skill nodejs-skill">
+        <div class="skillname">
+            Node.js:
+        </div>
+        <div class="skillpercent" title="NPM, Grunt, Bower, Yeoman, Express, socket.io, Karma, Jasmine...">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="110"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="skill apache-skill">
+        <div class="skillname">
+            Apache:
+        </div>
+        <div class="skillpercent">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="80"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="skill rails-skill">
+        <div class="skillname">
+            Rails:
+        </div>
+        <div class="skillpercent">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="50"></rect>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<div class="skillgroup">
+    <div class="skillgroupname">
+        <h4>Software</h4>
+    </div>
+    <div class="skill java-skill">
+        <div class="skillname">
+            Java:
+        </div>
+        <div class="skillpercent" title="JEE, JAX-RS">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="90"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="skill php-skill">
+        <div class="skillname">
+            PHP:
+        </div>
+        <div class="skillpercent" title="Symfony 2, Wordpress, Magento, Joomla, Typo3, Smarty...">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="120"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="skill aspx-vb-skill">
+        <div class="skillname">
+            ASP.NET / VB:
+        </div>
+        <div class="skillpercent" title="MVC3, RAZOR">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="40"></rect>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<h1 id="works">Works</h1>
+
+<p>
+    Lista de proyectos en los que he tomado parte:
+
+</p>
+
+<div class="works-circles">
+    <div class="circle" id="works-kabel-deutschland"></div>
+    <div class="circle" id="works-right-lively-hood"></div>
+    <div class="circle" id="works-fktg"></div>
+    <div class="circle" id="works-citoliva"></div>
+    <div class="circle" id="works-begona"></div>
+    <div class="circle" id="works-tierras-vivas"></div>
+    <div class="circle" id="works-avanza"></div>
+    <div class="circle" id="works-2pir"></div>
+</div>
+
+<h1 id="about">About</h1>
+
+<p>
+    Entre mis aficiones se encuentra aprender música, concretamente guitarra y tengo planeado seguir con el
+    piano.
+    También los videojuegos, especialmente los multijugador y los de terror. Disfruto coleccionando y
+    resolviendo
+    puzzles tipo Cubo de Rubik, normalmente bajo la presión del cronómetro.
+</p>
+
+<h1 id="contact">Contact</h1>
+
+<p>
+    
+</p>
+</div>
+</div>
+
+<!-- build:js({.tmp,app}) scripts/vendors.js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery-ui/ui/jquery.ui.core.js"></script>
+<script src="bower_components/jquery-ui/ui/jquery.ui.widget.js"></script>
+<script src="bower_components/jquery-ui/ui/jquery.ui.position.js"></script>
+<script src="bower_components/jquery-ui/ui/jquery.ui.tooltip.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
 </html>
