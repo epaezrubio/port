@@ -215,6 +215,7 @@ a:hover {
         max-width: 100px;
         text-align: center;
         padding: 8px 5px 5px;
+
     }
 }
 
@@ -224,9 +225,6 @@ a:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-    body {
-        background: rgba(255,0,0,0.2);
-    }
     .skillgroup {
         width: 100%;
     }
