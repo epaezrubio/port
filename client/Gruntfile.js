@@ -35,6 +35,7 @@ module.exports = function (grunt) {
             },
             js: {
                 files: ['<%= config.app %>/scripts/{,*/}*.js'],
+                tasks: [],
                 options: {
                     livereload: true
                 }
@@ -314,8 +315,8 @@ module.exports = function (grunt) {
                 'copy:styles'
             ],
             dist: [
-                'copy:styles',
                 'imagemin',
+                'copy:styles',
                 'svgmin'
             ]
         }

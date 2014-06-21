@@ -1,7 +1,231 @@
-html, body {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+/* #Palete
+==================================================
+
+bg-lightgray: #FAFAFA
+bg-orange: #F25900
+bold-text: #383838
+
+*/
+
+/* #Site Styles
+================================================== */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    background-color: #FAFAFA;
+}
+
+h2 {
+    padding-top: 20px;
+    font-size: 2em;
+    font-weight: normal;
+    color: #383838;
+    text-align: center;
+    margin: 0px 20px 20px;
+    clear: both;
+}
+
+.content {
+    margin-top: 60px;
+}
+
+b {
+    font-weight: 400;
+}
+
+p {
+    padding: 15px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+a {
+    color: #F25900;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    margin-top: 140px;
+    position: fixed;
+}
+
+.menu-item {
+    color: #F25900;
+    text-align: right;
+    display: block;
+    padding: 7px 30px;
+    font-size: 1.5em;
+}
+
+.menu-item:hover {
+    text-decoration: none;
+    color: #CA3100;
+}
+
+.works-circles {
+    text-align: center;
+}
+
+/*#works- {background-image: url(../images/works/.png);}*/
+#works-kabel-deutschland {background-image: url(../images/works/kabel-deutschland.png);}
+#works-right-lively-hood {background-image: url(../images/works/right-lively-hood.png);}
+#works-tierras-vivas {background-image: url(../images/works/tierras-vivas.png);}
+#works-avanza {background-image: url(../images/works/avanza.png);}
+#works-fktg {background-image: url(../images/works/fktg.png);}
+#works-citoliva {background-image: url(../images/works/citoliva.png);}
+#works-2pir {background-image: url(../images/works/2pir.png);}
+#works-begona {background-image: url(../images/works/begona.png);}
+
+.circle {
+    display: inline-block;
+    margin: 10px 15px;
+    border-radius: 60px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border: 4px solid #F25900;
+}
+
+.skillgroup.left {
+    clear: both;
+}
+
+.skillgroup {
+    margin: 0px 0px 20px;
+    float: left;
+    width: 50%;
+}
+
+.skill {
+    clear: both;
+ }
+
+.skillname {
+    float: left;
+    margin: 10px 0px;
+    width: 100px;
+}
+
+.skillpercent {
+    float: left;
+    margin: 10px 0px;
+}
+
+.skillgroupname {
+    text-align: center;
+    font-weight: bold;
+}
+
+.competences-pict {
+    width: 124px;
+    height: 170px;
+    margin: 20px auto;
+    background-image: url(../images/me.png);
+}
+
+.ui-tooltip {
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+.html5-skill .skillbar {background-color: #ffad99;}
+.html5-skill .skillpercent  {fill: #e44d26;}
+
+.css3-skill .skillbar {background-color: #99c0ff;}
+.css3-skill .skillpercent {fill: #2277ff;}
+
+.javascript-skill .skillbar {background-color: #ffee99;}
+.javascript-skill .skillpercent {fill: #d6ba32;}
+
+.mongodb-skill .skillbar {background-color: #a7ff99;}
+.mongodb-skill .skillpercent {fill: #409433;}
+
+.neo4j-skill .skillbar {background-color: #99f0ff;}
+.neo4j-skill .skillpercent {fill: #33737f;}
+
+.mysql-skill .skillbar {background-color: #ffd899;}
+.mysql-skill .skillpercent {fill: #e48e00;}
+
+.java-skill .skillbar {background-color: #ffca99;}
+.java-skill .skillpercent {fill: #e76f00;}
+
+.nodejs-skill .skillbar {background-color: #d1ff99;}
+.nodejs-skill .skillpercent {fill: #83cd29;}
+
+.apache-skill .skillbar {background-color: #da99ff;}
+.apache-skill .skillpercent {fill: #9406e8;}
+
+.rails-skill .skillbar {background-color: #ff99a3;}
+.rails-skill .skillpercent {fill: #95111f;}
+
+.php-skill .skillbar {background-color: #e5ebff;}
+.php-skill .skillpercent {fill: #6c7eb7;}
+
+.aspx-vb-skill .skillbar {background-color: #99ffc5;}
+.aspx-vb-skill .skillpercent {fill: #05703b;}
+
+.footer {
+    margin-bottom: 150px;
+}
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+    .skillgroup {
+        width: 100%;
+    }
+    .menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #333333;
+        text-align: center;
+    }
+    .menu ul {
+        display: inline-block;
+    }
+    .menu li {
+        float: left;
+    }
+    .menu-item {
+        font-size: 1em;
+        max-width: 100px;
+        text-align: center;
+        padding: 8px 5px 5px;
+
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    .skillgroup {
+        width: 100%;
+    }
 }

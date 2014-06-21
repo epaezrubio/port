@@ -1,20 +1,320 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>client</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <link rel="shortcut icon" href="/favicon.ico">
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <title>devPaezRubio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/skeleton/stylesheets/skeleton.css">
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery.ui.core.css">
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery.ui.tooltip.css">
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,400italic' rel='stylesheet'
+          type='text/css'>
 
-        <canvas id="port" width="640" height="640"></canvas>
-        
-        <script src="scripts/helpers/jx.js"></script>
-        <script src="scripts/helpers/TMXParser.js"></script>
-        <script src="scripts/canvas/layers.js"></script>
-        <script src="scripts/main.js"></script>
-    </body>
+</head>
+<body>
+<div class="container">
+<div class="four columns">
+    <div class="sidebar">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a class="menu-item" href="" data-scroll-to="home">Inicio</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="" data-scroll-to="competences">Competencias</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="" data-scroll-to="skills">Habilidades</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="" data-scroll-to="works">Trabajos</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="" data-scroll-to="about">Sobre mí</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="" data-scroll-to="contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="twelve columns offset-by-four content">
+<h2 id="home">Inicio</h2>
+
+<p>
+    Hola, soy <b>Eduardo Páez </b>, un <b>programador software y web</b> especialista en <b>JavaScript</b>
+    trabajando
+    actualmente en Ion2s. Vengo del sur de España donde tuve la oportudad de estudiar <b>Desarrollo de
+    Aplicaciones
+    Web</b>. Para saber más de mí mira mi trabajo en mi <a href="" data-scroll-to="works">porfolio</a>, <a
+        href="http://blog.devpaezrubio.com">blog</a> o <a
+        href="https://github.com/epaezrubio">repositorios</a>.
+    Si quieres, sientete libre de <a href="" data-scroll-to="contact">contactar conmigo</a> por redes sociales o correo
+    electrónico.
+</p>
+
+<h2 id="competences">Competencias</h2>
+
+<div>
+    <div class="three columns alpha">
+        <div class="competences-pict"></div>
+    </div>
+    <div class="nine columns omega">
+        <p>
+            Me gusta escribir buen código: <b>limpio</b>, <b>escalable</b>, basado en <b>patrones de diseño</b>. Soy
+            amante del
+            <b>código
+                elegante</b> y disfruto cuando programar se convierte en un desafío. No me detiene ninguna falta de
+            conocimiento
+            si existe un libro que hable sobre ese tema. A diferencia de muchos otros programadores, no me da
+            miedo leer
+            una publicación de especificación de un estándar, RFC, o lo que sea necesario para profundizar en un
+            tema
+            concreto.
+        </p>
+    </div>
+</div>
+<p style="clear: left;">
+    Como mis herramientas de trabajo no pueden faltar un buen <b>IDE</b>, <b>debugger</b>, un <b>editor de texto</b>
+    rápido y
+    flexible, y
+    sobre
+    todo
+    una <b>consola de comandos</b>. Por supuesto el <b>café</b> y la pared llena de <b>pizarras para dibujar</b> se dan
+    por hecho.
+</p>
+
+<p>
+    Soy un gran defensor del <b>Open Source</b>, y utilizo recursos desarrollados por la comunidad de desarrolladores
+    siempre
+    que puedo (salvo alguna manía imposible de eliminar hoy en día). Además me apoyo en <b>frameworks</b> siempre que
+    los
+    requerimientos se ajusten a sus funcionalidades. Me encaaaaaaanta <b>desarrollar mediante TDD</b>, no hay mejor
+    sensación
+    en el mundo que ver como todos los tests devuelven OK.
+</p>
+
+<p>
+    Y por último, mencionar que <b>disfruto trabajando en equipos profesionales</b>, así como con ténicas de
+    organización como <b>Scrum</b>.
+</p>
+
+<h2 id="skills">Habilidades</h2>
+
+
+<div class="skillgroup">
+    <div class="skillgroupname">
+        <h4>Web</h4>
+    </div>
+    <div class="skill html5-skill">
+        <div class="skillname">
+            HTML5:
+        </div>
+        <div class="skillpercent" title="Canvas, WebGL, WebSockets, Phonegap, etiquetas semánticas">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="110"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="skill javascript-skill">
+        <div class="skillname">
+            JavaScript:
+        </div>
+        <div class="skillpercent" title="SPA, AngularJS, jQuery, Ember.js">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="150"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="skill css3-skill">
+        <div class="skillname">
+            CSS3:
+        </div>
+        <div class="skillpercent"
+             title="Compass, SASS, Bootstrap, jQuery UI / Mobile, animationes CSS3, diseño responsivo...">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="120"></rect>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<div class="skillgroup">
+    <div class="skillgroupname">
+        <h4>Bases de datos</h4>
+    </div>
+    <div class="skill mongodb-skill">
+        <div class="skillname">
+            MongoDB:
+        </div>
+        <div class="skillpercent" title="Replicación, sharding, índices eficientes, Mongoose...">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="140"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="skill mysql-skill">
+        <div class="skillname">
+            SQL:
+        </div>
+        <div class="skillpercent" title="MySQL, PostgreSQL, SQL Server, SQLite...">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="130"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="skill neo4j-skill">
+        <div class="skillname">
+            Neo4j:
+        </div>
+        <div class="skillpercent">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="100"></rect>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<div class="skillgroup left">
+    <div class="skillgroupname">
+        <h4>Servidor</h4>
+    </div>
+    <div class="skill nodejs-skill">
+        <div class="skillname">
+            Node.js:
+        </div>
+        <div class="skillpercent" title="NPM, Grunt, Bower, Yeoman, Express, socket.io, Karma, Jasmine...">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="110"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="skill apache-skill">
+        <div class="skillname">
+            Apache:
+        </div>
+        <div class="skillpercent">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="80"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="skill rails-skill">
+        <div class="skillname">
+            Rails:
+        </div>
+        <div class="skillpercent">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="50"></rect>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<div class="skillgroup">
+    <div class="skillgroupname">
+        <h4>Software</h4>
+    </div>
+    <div class="skill java-skill">
+        <div class="skillname">
+            Java:
+        </div>
+        <div class="skillpercent" title="JEE, JAX-RS">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="90"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="skill php-skill">
+        <div class="skillname">
+            PHP:
+        </div>
+        <div class="skillpercent" title="Symfony 2, Wordpress, Magento, Joomla, Typo3, Smarty...">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="120"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="skill aspx-vb-skill">
+        <div class="skillname">
+            ASP.NET / VB:
+        </div>
+        <div class="skillpercent" title="MVC3, RAZOR">
+            <svg width="150" height="20" class="skillbar">
+                <rect height="25" width="40"></rect>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<h2 id="works">Trabajos</h2>
+
+<p>
+    Lista de proyectos en los que he tomado parte:
+
+</p>
+
+<div class="works-circles">
+    <div class="circle" id="works-kabel-deutschland"></div>
+    <div class="circle" id="works-right-lively-hood"></div>
+    <div class="circle" id="works-fktg"></div>
+    <div class="circle" id="works-citoliva"></div>
+    <div class="circle" id="works-begona"></div>
+    <div class="circle" id="works-tierras-vivas"></div>
+    <div class="circle" id="works-avanza"></div>
+    <div class="circle" id="works-2pir"></div>
+</div>
+
+<h2 id="about">Sobre mí</h2>
+
+<p>
+    Entre mis aficiones se encuentra <b>aprender música</b>, concretamente guitarra y tengo planeado seguir con el
+    piano.
+    También los <b>videojuegos</b>, especialmente los multijugador y los de terror. Disfruto coleccionando y
+    resolviendo
+    puzzles tipo <b>Cubo de Rubik</b>, normalmente a <b>contrarreloj</b> con un cronómetro.
+</p>
+
+<p>
+    Tengo la suerte de que <b>mi trabajo es también una de mis aficiones</b>, y por ello, aprendo gustosamente nuevas
+    cosas útiles para mi trabajo en mi tiempo libre, siempre que no esté haciendo algo de lo dicho anteriormente.
+</p>
+
+<h2 id="contact">Contacto</h2>
+
+<p>
+    Muchas gracias por interesarte por mi página. Si tienes alguna <b>pregunta o sugerencia</b> puedes contactar conmigo
+    a
+    través de <a href="mailto:contact@devpaezrubio.com">mi correo electrónico</a> o redes sociales. ¡Es fácil contactar
+    conmigo!
+</p>
+
+<div class="footer"></div>
+</div>
+</div>
+
+<!-- build:js({.tmp,app}) scripts/vendors.js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery-ui/ui/jquery.ui.core.js"></script>
+<script src="bower_components/jquery-ui/ui/jquery.ui.widget.js"></script>
+<script src="bower_components/jquery-ui/ui/jquery.ui.position.js"></script>
+<script src="bower_components/jquery-ui/ui/jquery.ui.tooltip.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
 </html>
