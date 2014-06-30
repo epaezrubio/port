@@ -80,6 +80,7 @@ a:hover {
 #works-citoliva {background-image: url(../images/works/citoliva.png);}
 #works-2pir {background-image: url(../images/works/2pir.png);}
 #works-begona {background-image: url(../images/works/begona.png);}
+#works-pp {background-image: url(../images/works/soon.png);}
 
 .circle {
     display: inline-block;
@@ -90,6 +91,22 @@ a:hover {
     height: 100px;
     border: 4px solid #F25900;
 }
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 10px;
+    width: 72px;
+    height: 72px;
+}
+
+#social-icon-linkedin {background-image: url(../images/social/linkedin.png); }
+#social-icon-twitter {background-image: url(../images/social/twitter.png); }
+#social-icon-github {background-image: url(../images/social/github.png); }
+#social-icon-stack-overflow {background-image: url(../images/social/stack-overflow.png); }
 
 .skillgroup.left {
     clear: both;

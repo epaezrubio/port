@@ -25,47 +25,5 @@ $(document).on({
 
         })
 
-        $("#works-kabel-deutschland").on({
-            click: function() {
-                window.location = "http://www.kabeldeutschland.de/";
-            }
-        });
-        $("#works-right-lively-hood").on({
-            click: function() {
-                window.location = "http://www.rightlivelihood.org/";
-            }
-        });
-        $("#works-fktg").on({
-            click: function() {
-                window.location = "http://fktg.org/";
-            }
-        });
-        $("#works-citoliva").on({
-            click: function() {
-                window.location = "http://www.citoliva.es/";
-            }
-        });
-        $("#works-begona").on({
-            click: function() {
-                window.location = "http://www.begonavelasco.com/";
-            }
-        });
-        $("#works-tierras-vivas").on({
-            click: function() {
-                window.location = "http://www.tierrasvivas.es/";
-            }
-        });
-        $("#works-avanza").on({
-            click: function() {
-                window.location = "http://avanzapublicidad.es/";
-            }
-        });
-        $("#works-2pir").on({
-            click: function() {
-                window.location = "http://www.2pirdifferent.net/";
-            }
-        });
-
-
     }
-})
+});
