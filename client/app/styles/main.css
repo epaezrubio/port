@@ -71,6 +71,11 @@ a:hover {
     color: #CA3100;
 }
 
+.menu-langs {
+    text-align: right;
+    padding: 7px 30px;
+}
+
 .works-circles {
     text-align: center;
 }
@@ -244,6 +249,12 @@ a:hover {
         text-align: center;
         padding: 8px 5px 5px;
 
+    }
+
+    .menu-langs {
+        position: absolute;
+        bottom: 25px;
+        right: -20px;
     }
 }
 
