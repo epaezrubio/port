@@ -22,12 +22,16 @@ h2 {
     font-weight: normal;
     color: #383838;
     text-align: center;
-    margin: 0px 20px 20px;
+    margin: 0 20px 20px;
     clear: both;
 }
 
 .content {
+    overflow: auto;
     margin-top: 60px;
+}
+.view-container {
+    width: 700px;
 }
 
 b {
@@ -108,12 +112,15 @@ a:hover {
 #social-icon-github {background-image: url(../images/social/github.png); }
 #social-icon-stack-overflow {background-image: url(../images/social/stack-overflow.png); }
 
+.skillgroup-list {
+    overflow: auto;
+}
 .skillgroup.left {
     clear: both;
 }
 
 .skillgroup {
-    margin: 0px 0px 20px;
+    margin: 0 0 20px;
     float: left;
     width: 50%;
 }
@@ -124,13 +131,13 @@ a:hover {
 
 .skillname {
     float: left;
-    margin: 10px 0px;
+    margin: 10px 0;
     width: 100px;
 }
 
 .skillpercent {
     float: left;
-    margin: 10px 0px;
+    margin: 10px 0;
 }
 
 .skillgroupname {
@@ -187,7 +194,7 @@ a:hover {
 .aspx-vb-skill .skillpercent {fill: #05703b;}
 
 .footer {
-    margin-bottom: 150px;
+    margin-bottom: 70px;
 }
 
 /* #Page Styles
@@ -209,6 +216,10 @@ a:hover {
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
+
+    .view-container {
+        width: 400px;
+    }
 
     .skillgroup {
         width: 100%;

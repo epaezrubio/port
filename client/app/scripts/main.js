@@ -15,15 +15,6 @@ $(document).on({
             }
         });
 
-        $("[data-scroll-to]").click(function(event) {
-
-            event.preventDefault();
-            var scrollTarget = $(event.target).attr("data-scroll-to"),
-                targetElement = $("#" + scrollTarget);
-
-            $("html, body").animate({ scrollTop: targetElement.position().top }, {duration: 500, queue: false});
-
-        })
 
     }
 });
